@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="all">
+    <main>
+      <div class="left">
+        <div class="cards">
+          <div class="front">
+            <img class="f" src="./images/bg-card-front.png" alt="">
+            <img class="logo" src="./images/card-logo.svg" alt="">
+            <h1 id="number">0000 0000 0000 0000</h1>
+            <span id="name">Jane Appleseed</span>
+            <p id="exp-date"><span id="m">00</span>/<span id="y">00</span></p>
+          </div>
+          <div class="back">
+            <img class="b" src="./images/bg-card-back.png" alt="">
+            <span id="cvc">000</span>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <form action="">
+          <div class="name">
+            <label for="">Cardholder Name</label>
+            <input id="n" type="text" maxlength="25" placeholder="e.g. Jane Appleseed">
+            <p id="error-c-name">Can't be blank</p>
+          </div>
+          <div class="number">
+            <label for="">Card Number</label>
+            <input id="c-num" type="text" maxlength="19" placeholder="e.g. 1234 5678 9123 0000">
+            <p id="error-c-num">Wrong format, numbers only</p>
+          </div>
+          <div class="exp">
+            <div class="exp-date">
+              <label for="">Exp. Date (MM/YY)</label>
+              <div class="expd">
+                <input maxlength="2" id="dm" min="1" max="12" type="text" placeholder="MM">
+                <input maxlength="2" id="dy" min="21" max="30" type="text" placeholder="YY">
+              </div>
+              <p id="error-date">Can't be blank</p>
+            </div>
+            <div class="cvc">
+              <label for="">CVC</label>
+              <input maxlength="3" id="c" type="text" placeholder="e.g. 123">
+              <p id="error-cvc">Can't be blank</p>
+            </div>
+          </div>
+          <button id="btn" type="submit">Confirm</button>
+        </form>
+        <div class="thank">
+          <img src="./images/icon-complete.svg" alt="">
+          <h2>Thank you!</h2>
+          <p>We've added your card details</p>
+          <button id="button" type="submit">Continue</button>
+        </div>
+      </div>
+    </main>
+    <div class="attribution">
+      Coded by <a href="https://linktr.ee/ilkenza" target="_blank">Ilkenza</a>.
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
